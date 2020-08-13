@@ -7,3 +7,4 @@ zepto AJax 二次封装
 
 ## 使用及参数设置：
 
+![image](https://github.com/jingqi1990/AJax/blob/master/carbon.png)
