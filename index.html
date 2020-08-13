@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJax 二次封装</title>
+</head>
+<body>
+    <script src="lib/zepto.js"></script>
+    <script src="lib/Ajax.js"></script>
+    <script>
+        var Demo = new Ajax({
+            url:"",// 接口请求地址URL
+            type:"GET",//接口请求方式 默认为GET
+            data:{}, // 传入接口的的数据参数
+            dataType:'text',// 请求接口的数据类型 默认为Jason
+            success:function(data){ 
+                console.log(data); // 接口请求生成 返回的数据事件
+            },
+            error:function(err){
+                console.log('code:'+ err.status +',msg:'+ err.statusText);// 接口请求失败 返回的错误信息事件
+            },
+        }).send();
+    </script>
+</body>
+</html>
